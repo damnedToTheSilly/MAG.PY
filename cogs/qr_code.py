@@ -14,7 +14,7 @@ class QRCode(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    @app_commands.command(name="url-qr-code", description="Make a qr code for a given url")
+    @app_commands.command(name="create-qr-code", description="Make a qr code for the given url")
     @app_commands.describe(url="qr-code url")
     async def make_qr_code(self, interaction: discord.Interaction, url: str):
         # Possible TODO: Add checking for https or http and add if not present already
